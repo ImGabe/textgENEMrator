@@ -29,29 +29,6 @@ export default function PublicPage() {
 
               {Object.values(data).map(sections => <TabPanel><Structure sections={sections} /></TabPanel>)}
             </Tabs>
-
-
-            {/* <Tabs>
-              <TabList className="estrutura">
-                <Tab>introdução</Tab>
-                <Tab>desenvolvimento I</Tab>
-                <Tab>desenvolvimento II</Tab>
-                <Tab>conclusão</Tab>
-              </TabList>
-
-              <TabPanel className="secao">
-                <Introduction />
-              </TabPanel>
-              <TabPanel className="secao">
-                <Development />
-              </TabPanel>
-              <TabPanel className="secao">
-                <Development />
-              </TabPanel>
-              <TabPanel className="secao">
-                <Conclusion />
-              </TabPanel>
-            </Tabs> */}
           </div>
         </div>
 
