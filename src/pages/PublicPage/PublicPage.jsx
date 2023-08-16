@@ -1,14 +1,13 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-import "react-tabs/style/react-tabs.css";
 import "./PublicPage.css";
 
-import Introduction from "../../component/structures/Introduction/Introduction";
-import Development from "../../component/structures/Development/Development";
-import Conclusion from "../../component/structures/Conclusion/Conclusion";
+import Structure from "../../component/Structure/Structure";
+import data from '../../../foobar.json'
 
 export default function PublicPage() {
+
   return (
     <>
       <div className="container">
@@ -24,6 +23,15 @@ export default function PublicPage() {
 
           <div className="repertorio">
             <Tabs>
+              <TabList>
+                {Object.keys(data).map(structure => <Tab>{structure}</Tab>)}
+              </TabList>
+
+              {Object.values(data).map(sections => <TabPanel><Structure sections={sections} /></TabPanel>)}
+            </Tabs>
+
+
+            {/* <Tabs>
               <TabList className="estrutura">
                 <Tab>introdução</Tab>
                 <Tab>desenvolvimento I</Tab>
@@ -43,7 +51,7 @@ export default function PublicPage() {
               <TabPanel className="secao">
                 <Conclusion />
               </TabPanel>
-            </Tabs>
+            </Tabs> */}
           </div>
         </div>
 

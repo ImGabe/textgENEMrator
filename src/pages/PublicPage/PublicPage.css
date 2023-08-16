@@ -18,13 +18,13 @@
 }
 
 .container-repertorio {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .container-redacao {
-    margin-right: 20px;
-    margin-left: 20px
+  margin-right: 20px;
+  margin-left: 20px
 }
 
 .redacao,
@@ -77,14 +77,22 @@ input {
 }
 
 .react-tabs {
-    padding: 13px;
+  padding: 13px;
+
+
 }
 
 .react-tabs__tab {
+  display: inline-block;
+
+  font-size: 1em;
+  
+  padding: 10px;
   background: rgb(175, 222, 228);
   border-top-left-radius: 1rem;
-  border-color: rgba(63, 129, 131, 0.842);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+
+  border: 1px solid rgba(63, 129, 131, 0.842);
+  border-bottom: none;
 }
 
 .react-tabs__tab--selected,
@@ -93,12 +101,30 @@ input {
   padding: 10px;
 }
 
+.react-tabs__tab-panel--selected {
+  border: 1px solid rgba(63, 129, 131, 0.842);
+  border-top: none;
+}
+
+
+.react-tabs__tab--selected,
+.react-tabs__tab-panel--selected {
+  height: 100%;
+  padding: 10px;
+}
+
+.react-tabs__tab-panel--selected {
+  background: rgba(98, 197, 201, 0.842);
+
+}
+
 .react-tabs__tab--selected {
   background: rgba(98, 197, 201, 0.842);
 }
 
+
 .react-tabs__tab-panel--selected {
-  background: rgb(175, 222, 228);
+  background: rgba(98, 197, 201, 0.842);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -108,7 +134,7 @@ input {
 
 .secao {
   font-size: 0.95rem;
-  background-color: rgba(98, 197, 201, 0.842);
+  /* background-color: rgba(98, 197, 201, 0.842); */
 
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
