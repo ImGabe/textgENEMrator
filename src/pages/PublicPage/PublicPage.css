@@ -44,7 +44,8 @@
   background: rgb(248, 253, 255);
   width: 100%;
   padding: 10px;
-  min-height: 310px;
+
+  height: 100%;
 }
 
 .caixatema {
