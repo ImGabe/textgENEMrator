@@ -7,8 +7,7 @@ export default function Section({ phrases }) {
 
   return (
     <div className='section'>
-      {phrases[0].map((phrase) => <Phrase>{phrase}</Phrase>)}
-
+      {phrases[0].map((phrase, idx) => <Phrase key={`phrase-${idx}`} >{phrase}</Phrase>)}
     </div>
   )
 }

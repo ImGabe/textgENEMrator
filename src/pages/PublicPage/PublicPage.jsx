@@ -24,10 +24,10 @@ export default function PublicPage() {
           <div className="repertorio">
             <Tabs>
               <TabList>
-                {Object.keys(data).map(structure => <Tab>{structure}</Tab>)}
+                {Object.keys(data).map((structure, idx) => <Tab key={`tab-sections-${idx}`} >{structure}</Tab>)}
               </TabList>
 
-              {Object.values(data).map(sections => <TabPanel><Structure sections={sections} /></TabPanel>)}
+              {Object.values(data).map((sections, idx) => <TabPanel key={`tabpanel-sections-${idx}`} ><Structure sections={sections} /></TabPanel>)}
             </Tabs>
           </div>
         </div>
